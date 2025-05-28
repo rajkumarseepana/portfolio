@@ -1,14 +1,29 @@
-import './App.css'
+import { ThemeProvider, useTheme } from 'contexts/ThemeContext';
+import Header from 'components/Header'
+import { AppRoutes } from 'routes'
+import SkillsSection from 'components/SkillsSection';
 
 function App() {
 
   return (
-    <>
-      <div className='text-5xl flex items-center justify-center h-screen'>
-        Raj Kumar
-      </div>
-    </>
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   )
 }
 
 export default App
+
+const AppContent = () => {
+  const { isDarkMode, toggleTheme } = useTheme();
+
+  return (
+    <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300">
+      <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+      <main>
+        <AppRoutes />
+        <SkillsSection />
+      </main>
+    </div>
+  )
+}
