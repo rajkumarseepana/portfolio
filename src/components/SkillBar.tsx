@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import type { SkillBarProps } from './data/Types';
-import { useInView } from 'hooks/UseInView';
+import { useInView } from 'hooks/useInView';
 
 const SkillBar: React.FC<SkillBarProps> = ({ name, level }) => {
     const [width, setWidth] = useState(0);

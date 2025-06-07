@@ -132,7 +132,7 @@ const LandingPage = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="p-2 rounded-lg bg-slate-200/50 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 hover:bg-violet-100 dark:hover:bg-violet-900 hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-300 transform hover:scale-110 backdrop-blur-sm"
-                                    aria-label="Twitter"
+                                    aria-label="Instagram"
                                 >
                                     <Instagram size={20} />
                                 </a>
