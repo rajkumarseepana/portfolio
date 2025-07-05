@@ -1,7 +1,7 @@
 import React from 'react';
 import { Code, Layers, Palette, Gauge, LayoutGrid, Play, Lightbulb } from 'lucide-react';
 import SkillBar from './SkillBar';
-import { frontendSkills, toolsSkills } from './data/constantsData';
+import { frontendSkills, toolsSkills } from '../data/constantsData';
 
 const SkillsSection = () => {
     const skillCards = [

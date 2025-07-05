@@ -1,8 +1,9 @@
 import { ThemeProvider, useTheme } from 'contexts/ThemeContext';
 import Header from 'components/Header'
 import { AppRoutes } from 'routes'
-import SkillsSection from 'components/SkillsSection';
-import ProjectsSection from 'components/ProjectsSection';
+import SkillsSection from 'components/skills-section/SkillsSection';
+import ProjectsSection from 'components/projects-section/ProjectsSection';
+import ExperienceSection from 'components/experience-section/ExperienceSection';
 
 function App() {
 
@@ -25,6 +26,7 @@ const AppContent = () => {
         <AppRoutes />
         <SkillsSection />
         <ProjectsSection />
+        <ExperienceSection />
       </main>
     </div>
   )

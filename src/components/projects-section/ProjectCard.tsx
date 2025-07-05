@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useInView } from 'hooks/useInView';
-import type { ProjectCardProps } from './data/Types';
+import type { ProjectCardProps } from '../data/Types';
 import { ExternalLink, Eye, Github } from 'lucide-react';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
