@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useInView } from 'hooks/useInView';
 import ProjectCard from './ProjectCard';
-import { filters, projects } from './data/constantsData';
+import { filters, projects } from 'components/data/constantsData';
 import { ExternalLink, Code, Eye } from 'lucide-react';
 
 const ProjectsSection = () => {
