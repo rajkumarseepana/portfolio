@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import type { SkillBarProps } from './data/Types';
+import type { SkillBarProps } from 'components/data/Types';
 import { useInView } from 'hooks/useInView';
 
 const SkillBar: React.FC<SkillBarProps> = ({ name, level }) => {

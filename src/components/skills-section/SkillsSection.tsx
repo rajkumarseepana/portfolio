@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Layers, Palette, Gauge, LayoutGrid, Play, Lightbulb } from 'lucide-react';
 import SkillBar from './SkillBar';
 import { frontendSkills, toolsSkills } from '../data/constantsData';
