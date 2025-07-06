@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Github as GitHub, Linkedin, Code, Layout, Palette, Smartphone, Monitor, Sparkles, Instagram, ArrowUp } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Github as GitHub, Linkedin, Layout, Monitor, Sparkles, Instagram, ArrowUp } from 'lucide-react';
 
 const LandingPage = () => {
     const [showScrollArrow, setShowScrollArrow] = useState(false);

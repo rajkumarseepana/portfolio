@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import ThemeToggle from '../contexts/ThemeToggle';
 import type { ThemeToggleProps } from './data/Types';
 import { navLinks } from './data/constantsData';

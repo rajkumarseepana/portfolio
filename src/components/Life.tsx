@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function LifeProgress() {
+export function LifeProgress() {
     const [effort, setEffort] = useState(0);
     const navigate = useNavigate();
 
