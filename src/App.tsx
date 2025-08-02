@@ -4,6 +4,7 @@ import { AppRoutes } from 'routes'
 import SkillsSection from 'components/skills-section/SkillsSection';
 import ProjectsSection from 'components/projects-section/ProjectsSection';
 import ExperienceSection from 'components/experience-section/ExperienceSection';
+import ContactSection from 'components/contact-section/ContactSection';
 
 function App() {
 
@@ -27,6 +28,7 @@ const AppContent = () => {
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />
+        <ContactSection />
       </main>
     </div>
   )
