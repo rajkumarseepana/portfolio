@@ -5,6 +5,7 @@ import SkillsSection from 'components/skills-section/SkillsSection';
 import ProjectsSection from 'components/projects-section/ProjectsSection';
 import ExperienceSection from 'components/experience-section/ExperienceSection';
 import ContactSection from 'components/contact-section/ContactSection';
+import Footer from 'components/footer/Footer';
 
 function App() {
 
@@ -29,6 +30,7 @@ const AppContent = () => {
         <ProjectsSection />
         <ExperienceSection />
         <ContactSection />
+        <Footer />
       </main>
     </div>
   )
