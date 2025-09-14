@@ -9,19 +9,19 @@ export const navLinks = [
 ];
 
 export const frontendSkills = [
-    { name: 'HTML/CSS', level: 95 },
-    { name: 'JavaScript', level: 90 },
-    { name: 'React', level: 92 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'Tailwind CSS', level: 88 },
+    { name: 'HTML/CSS', level: 75 },
+    { name: 'JavaScript', level: 70 },
+    { name: 'React', level: 72 },
+    { name: 'TypeScript', level: 75 },
+    { name: 'Tailwind CSS', level: 78 },
 ];
 
 export const toolsSkills = [
     { name: 'Git/GitHub', level: 90 },
-    { name: 'Webpack/Vite', level: 82 },
+    { name: 'Webpack/Vite', level: 72 },
     { name: 'Jest/Testing Library', level: 78 },
     { name: 'Figma/Design Tools', level: 75 },
-    { name: 'CI/CD', level: 70 },
+    // { name: 'CI/CD', level: 70 },
 ];
 
 export const projects: Project[] = [

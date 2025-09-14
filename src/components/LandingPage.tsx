@@ -178,7 +178,7 @@ const LandingPage = () => {
                                         </div>
                                         );
                                     </div>
-                                    {'}'}
+                                    <span className='text-violet-600 dark:text-violet-400'>{'}'}</span>
                                 </div>
 
                                 {/* Component Preview */}
