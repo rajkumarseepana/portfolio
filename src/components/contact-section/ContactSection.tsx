@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, ExternalLink, Github, Linkedin, Instagram } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const contactInfo = [
     {
@@ -41,15 +42,16 @@ const ContactSection = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        toast.error('Api not connected, please write an email to rajkumarseepana895@gmail.com')
 
         // Simulate form submission
         setTimeout(() => {
             setIsSubmitting(false);
-            setSubmitSuccess(true);
+            setSubmitError(true);
             setFormData({ name: '', email: '', subject: '', message: '' });
 
-            // Reset success message after 5 seconds
-            setTimeout(() => setSubmitSuccess(false), 5000);
+            // Reset error message after 5 seconds
+            setTimeout(() => setSubmitError(false), 5000);
         }, 1500);
     };
 
@@ -112,7 +114,7 @@ const ContactSection = () => {
                                         value={formData.email}
                                         onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm text-slate-800 dark:text-white placeholder-slate-400"
-                                        placeholder="seepana@gmail.com"
+                                        placeholder="rajkumarseepana895@gmail.com"
                                     />
                                 </div>
                             </div>
@@ -185,7 +187,7 @@ const ContactSection = () => {
                                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                                     </svg>
-                                    Failed to send message. Please try again.
+                                    Failed to send message. Please write an email to rajkumarseepana895@gmail.com.
                                 </div>
                             )}
                         </form>
